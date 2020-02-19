@@ -59,10 +59,17 @@
     <ref role="1XX52x" to="o5ti:1849qZZ7FiI" resolve="Pattern" />
     <node concept="3EZMnI" id="1849qZZ81l2" role="2wV5jI">
       <node concept="2iRfu4" id="1849qZZ81l3" role="2iSdaV" />
-      <node concept="3F2HdR" id="1849qZZ81kZ" role="3EZMnx">
+      <node concept="3F0ifn" id="3dNW9QWc8Es" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+      </node>
+      <node concept="3F2HdR" id="3dNW9QWc8EO" role="3EZMnx">
         <ref role="1NtTu8" to="o5ti:1849qZZ7FiL" resolve="sounds" />
+        <node concept="2iRfu4" id="3dNW9QWc8EQ" role="2czzBx" />
       </node>
       <node concept="3F0ifn" id="1849qZZ81ld" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+      </node>
+      <node concept="3F0ifn" id="3dNW9QWc8F3" role="3EZMnx">
         <property role="3F0ifm" value="x" />
       </node>
       <node concept="3F0A7n" id="1849qZZ81ll" role="3EZMnx">

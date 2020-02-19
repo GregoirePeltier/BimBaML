@@ -145,17 +145,32 @@
     <node concept="25R33" id="1849qZZ7Fjl" role="25R1y">
       <property role="3tVfz5" value="1298204030419252437" />
       <property role="TrG5h" value="BASS_DRUMS" />
-      <property role="1L1pqM" value="Bim" />
+      <property role="1L1pqM" value="Boum" />
     </node>
     <node concept="25R33" id="1849qZZ7Fjo" role="25R1y">
       <property role="3tVfz5" value="1298204030419252440" />
       <property role="TrG5h" value="KICKS" />
       <property role="1L1pqM" value="Bam" />
     </node>
+    <node concept="25R33" id="2P_wQ_S6pT1" role="25R1y">
+      <property role="3tVfz5" value="3271165193364282945" />
+      <property role="TrG5h" value="HI_HAT" />
+      <property role="1L1pqM" value="Tss" />
+    </node>
+    <node concept="25R33" id="2P_wQ_S6pST" role="25R1y">
+      <property role="3tVfz5" value="3271165193364282937" />
+      <property role="TrG5h" value="RIDE_CYMBAL" />
+      <property role="1L1pqM" value="Ting" />
+    </node>
     <node concept="25R33" id="1849qZZ898N" role="25R1y">
       <property role="3tVfz5" value="1298204030419374643" />
       <property role="TrG5h" value="CRASH_CYMBAL" />
       <property role="1L1pqM" value="Pschit" />
+    </node>
+    <node concept="25R33" id="2P_wQ_S6o$0" role="25R1y">
+      <property role="3tVfz5" value="3271165193364277504" />
+      <property role="TrG5h" value="SNARE_DRUM" />
+      <property role="1L1pqM" value="Bim" />
     </node>
     <node concept="25R33" id="1849qZZ89GR" role="25R1y">
       <property role="3tVfz5" value="1298204030419376951" />
