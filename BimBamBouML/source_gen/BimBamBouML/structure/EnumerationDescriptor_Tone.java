@@ -16,13 +16,16 @@ public class EnumerationDescriptor_Tone extends EnumerationDescriptorBase {
   }
 
   private final EnumerationDescriptor.MemberDescriptor myMember_NULL_0 = new EnumerationDescriptor.MemberDescriptor("NULL", "NULL", 0x120425afff1eb4d4L, "r:d77e8a00-b786-477d-87ac-e13b035d3730(BimBamBouML.structure)/1298204030419252436");
-  private final EnumerationDescriptor.MemberDescriptor myMember_BASS_DRUMS_0 = new EnumerationDescriptor.MemberDescriptor("BASS_DRUMS", "Bim", 0x120425afff1eb4d5L, "r:d77e8a00-b786-477d-87ac-e13b035d3730(BimBamBouML.structure)/1298204030419252437");
+  private final EnumerationDescriptor.MemberDescriptor myMember_BASS_DRUMS_0 = new EnumerationDescriptor.MemberDescriptor("BASS_DRUMS", "Boum", 0x120425afff1eb4d5L, "r:d77e8a00-b786-477d-87ac-e13b035d3730(BimBamBouML.structure)/1298204030419252437");
   private final EnumerationDescriptor.MemberDescriptor myMember_KICKS_0 = new EnumerationDescriptor.MemberDescriptor("KICKS", "Bam", 0x120425afff1eb4d8L, "r:d77e8a00-b786-477d-87ac-e13b035d3730(BimBamBouML.structure)/1298204030419252440");
+  private final EnumerationDescriptor.MemberDescriptor myMember_HI_HAT_0 = new EnumerationDescriptor.MemberDescriptor("HI_HAT", "Tss", 0x2d65836978199e41L, "r:d77e8a00-b786-477d-87ac-e13b035d3730(BimBamBouML.structure)/3271165193364282945");
+  private final EnumerationDescriptor.MemberDescriptor myMember_RIDE_CYMBAL_0 = new EnumerationDescriptor.MemberDescriptor("RIDE_CYMBAL", "Ting", 0x2d65836978199e39L, "r:d77e8a00-b786-477d-87ac-e13b035d3730(BimBamBouML.structure)/3271165193364282937");
   private final EnumerationDescriptor.MemberDescriptor myMember_CRASH_CYMBAL_0 = new EnumerationDescriptor.MemberDescriptor("CRASH_CYMBAL", "Pschit", 0x120425afff209233L, "r:d77e8a00-b786-477d-87ac-e13b035d3730(BimBamBouML.structure)/1298204030419374643");
+  private final EnumerationDescriptor.MemberDescriptor myMember_SNARE_DRUM_0 = new EnumerationDescriptor.MemberDescriptor("SNARE_DRUM", "Bim", 0x2d65836978198900L, "r:d77e8a00-b786-477d-87ac-e13b035d3730(BimBamBouML.structure)/3271165193364277504");
   private final EnumerationDescriptor.MemberDescriptor myMember_SILENCE_0 = new EnumerationDescriptor.MemberDescriptor("SILENCE", "$", 0x120425afff209b37L, "r:d77e8a00-b786-477d-87ac-e13b035d3730(BimBamBouML.structure)/1298204030419376951");
 
-  private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x120425afff1eb4d3L, 0x120425afff1eb4d4L, 0x120425afff1eb4d5L, 0x120425afff1eb4d8L, 0x120425afff209233L, 0x120425afff209b37L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_NULL_0, myMember_BASS_DRUMS_0, myMember_KICKS_0, myMember_CRASH_CYMBAL_0, myMember_SILENCE_0);
+  private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x120425afff1eb4d3L, 0x120425afff1eb4d4L, 0x120425afff1eb4d5L, 0x120425afff1eb4d8L, 0x2d65836978199e41L, 0x2d65836978199e39L, 0x120425afff209233L, 0x2d65836978198900L, 0x120425afff209b37L);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_NULL_0, myMember_BASS_DRUMS_0, myMember_KICKS_0, myMember_HI_HAT_0, myMember_RIDE_CYMBAL_0, myMember_CRASH_CYMBAL_0, myMember_SNARE_DRUM_0, myMember_SILENCE_0);
 
   @Nullable
   @Override
@@ -49,8 +52,14 @@ public class EnumerationDescriptor_Tone extends EnumerationDescriptorBase {
         return myMember_BASS_DRUMS_0;
       case "KICKS":
         return myMember_KICKS_0;
+      case "HI_HAT":
+        return myMember_HI_HAT_0;
+      case "RIDE_CYMBAL":
+        return myMember_RIDE_CYMBAL_0;
       case "CRASH_CYMBAL":
         return myMember_CRASH_CYMBAL_0;
+      case "SNARE_DRUM":
+        return myMember_SNARE_DRUM_0;
       case "SILENCE":
         return myMember_SILENCE_0;
     }

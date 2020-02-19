@@ -2,54 +2,162 @@
 <debug-info version="2">
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082113931046:jetbrains.mps.baseLanguage.structure.ContinueStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144231330558:jetbrains.mps.baseLanguage.structure.ForStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TextGenAspectDescriptor.java">
-      <unit at="50,0,53,0" name="BimBamBouML.textGen.TextGenAspectDescriptor$CONCEPTS" />
-      <unit at="16,0,54,0" name="BimBamBouML.textGen.TextGenAspectDescriptor" />
+      <unit at="56,0,59,0" name="BimBamBouML.textGen.TextGenAspectDescriptor$CONCEPTS" />
+      <unit at="16,0,60,0" name="BimBamBouML.textGen.TextGenAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:daba23fb-0731-4555-a217-5ab5462d6139(BimBamBouML.textGen)/3271165193364297978">
+    <file name="Pattern_TextGen.java">
+      <node id="3271165193364297978" at="17,54,18,55" concept="6" />
+      <node id="3271165193364307565" at="20,96,21,29" concept="1" />
+      <node id="3271165193364297978" at="27,0,28,0" concept="8" trace="sounds$WxpY" />
+      <node id="3271165193364297978" at="31,0,32,0" concept="8" trace="iteration$Wsjw" />
+      <node id="3271165193364307565" at="19,107,22,7" concept="3" />
+      <node id="3271165193364299091" at="18,55,23,5" concept="2" />
+      <node id="3271165193364297978" at="16,0,25,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="3271165193364307565" at="20,96,21,29" />
+      <scope id="3271165193364299093" at="19,107,22,7" />
+      <scope id="3271165193364307565" at="19,107,22,7">
+        <var name="item" id="3271165193364307565" />
+      </scope>
+      <scope id="3271165193364299091" at="18,55,23,5">
+        <var name="i" id="3271165193364299092" />
+      </scope>
+      <scope id="3271165193364297978" at="17,54,23,5">
+        <var name="tgs" id="3271165193364297978" />
+      </scope>
+      <scope id="3271165193364297978" at="16,0,25,0">
+        <var name="ctx" id="3271165193364297978" />
+      </scope>
+      <unit id="3271165193364297978" at="26,0,29,0" name="BimBamBouML.textGen.Pattern_TextGen$LINKS" />
+      <unit id="3271165193364297978" at="30,0,33,0" name="BimBamBouML.textGen.Pattern_TextGen$PROPS" />
+      <unit id="3271165193364297978" at="15,0,34,0" name="BimBamBouML.textGen.Pattern_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="3271165193364297978" at="28,41,29,37" concept="7" />
+      <scope id="3271165193364297978" at="28,41,29,37" />
+    </file>
+  </root>
+  <root nodeRef="r:daba23fb-0731-4555-a217-5ab5462d6139(BimBamBouML.textGen)/3271165193364308531">
+    <file name="Sound_TextGen.java">
+      <node id="3271165193364308531" at="15,54,16,55" concept="6" />
+      <node id="3271165193364308588" at="17,93,18,27" concept="1" />
+      <node id="3271165193364386356" at="19,5,20,21" concept="1" />
+      <node id="3271165193364308531" at="24,0,25,0" concept="8" trace="notes$WxA0" />
+      <node id="3271165193364308588" at="16,55,19,5" concept="3" />
+      <node id="3271165193364308531" at="14,0,22,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="3271165193364308588" at="17,93,18,27" />
+      <scope id="3271165193364308588" at="16,55,19,5">
+        <var name="item" id="3271165193364308588" />
+      </scope>
+      <scope id="3271165193364308531" at="15,54,20,21">
+        <var name="tgs" id="3271165193364308531" />
+      </scope>
+      <scope id="3271165193364308531" at="14,0,22,0">
+        <var name="ctx" id="3271165193364308531" />
+      </scope>
+      <unit id="3271165193364308531" at="23,0,26,0" name="BimBamBouML.textGen.Sound_TextGen$LINKS" />
+      <unit id="3271165193364308531" at="13,0,27,0" name="BimBamBouML.textGen.Sound_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="3271165193364308531" at="30,39,31,35" concept="7" />
+      <scope id="3271165193364308531" at="30,39,31,35" />
+    </file>
+  </root>
+  <root nodeRef="r:daba23fb-0731-4555-a217-5ab5462d6139(BimBamBouML.textGen)/3271165193364309764">
+    <file name="Note_TextGen.java">
+      <node id="3271165193364309764" at="15,54,16,55" concept="6" />
+      <node id="3271165193364334318" at="17,270,18,23" concept="1" />
+      <node id="3271165193364345074" at="20,272,21,23" concept="1" />
+      <node id="3271165193364351435" at="23,266,24,23" concept="1" />
+      <node id="3271165193364357571" at="26,270,27,23" concept="1" />
+      <node id="3271165193364363177" at="29,271,30,23" concept="1" />
+      <node id="3271165193364369132" at="32,265,33,23" concept="1" />
+      <node id="3271165193364385482" at="35,267,36,23" concept="1" />
+      <node id="3271165193364309764" at="41,0,42,0" concept="8" trace="tone$Wyyw" />
+      <node id="3271165193364313765" at="16,55,19,5" concept="4" />
+      <node id="3271165193364334892" at="19,5,22,5" concept="4" />
+      <node id="3271165193364345633" at="22,5,25,5" concept="4" />
+      <node id="3271165193364351653" at="25,5,28,5" concept="4" />
+      <node id="3271165193364357814" at="28,5,31,5" concept="4" />
+      <node id="3271165193364363475" at="31,5,34,5" concept="4" />
+      <node id="3271165193364379227" at="34,5,37,5" concept="4" />
+      <node id="3271165193364309764" at="14,0,39,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="3271165193364313767" at="17,270,18,23" />
+      <scope id="3271165193364334894" at="20,272,21,23" />
+      <scope id="3271165193364345635" at="23,266,24,23" />
+      <scope id="3271165193364351655" at="26,270,27,23" />
+      <scope id="3271165193364357816" at="29,271,30,23" />
+      <scope id="3271165193364363477" at="32,265,33,23" />
+      <scope id="3271165193364379229" at="35,267,36,23" />
+      <scope id="3271165193364309764" at="15,54,37,5">
+        <var name="tgs" id="3271165193364309764" />
+      </scope>
+      <scope id="3271165193364309764" at="14,0,39,0">
+        <var name="ctx" id="3271165193364309764" />
+      </scope>
+      <unit id="3271165193364309764" at="40,0,43,0" name="BimBamBouML.textGen.Note_TextGen$PROPS" />
+      <unit id="3271165193364309764" at="13,0,44,0" name="BimBamBouML.textGen.Note_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="3271165193364309764" at="26,38,27,34" concept="7" />
+      <scope id="3271165193364309764" at="26,38,27,34" />
     </file>
   </root>
   <root nodeRef="r:daba23fb-0731-4555-a217-5ab5462d6139(BimBamBouML.textGen)/3707571478513848764">
     <file name="TextGenAspectDescriptor.java">
-      <node id="3707571478513848764" at="26,39,27,35" concept="5" />
-      <node id="3707571478513848764" at="35,56,36,47" concept="4" />
-      <node id="3707571478513848764" at="36,47,37,50" concept="4" />
-      <node id="3707571478513848764" at="37,50,38,84" concept="1" />
-      <node id="3707571478513848764" at="38,84,39,17" concept="0" />
-      <node id="3707571478513848764" at="43,55,44,26" concept="5" />
-      <node id="3707571478513849062" at="46,60,47,19" concept="5" />
-      <node id="3707571478513848764" at="43,0,46,0" concept="6" trace="getFileName_Track#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="3707571478513848764" at="46,0,49,0" concept="6" trace="getFileExtension_Track#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="3707571478513848764" at="34,58,40,7" concept="2" />
-      <scope id="3707571478513848764" at="26,39,27,35" />
-      <scope id="3707571478513848764" at="43,55,44,26" />
-      <scope id="3707571478513848764" at="46,60,47,19" />
-      <scope id="3707571478513848764" at="43,0,46,0">
+      <node id="3707571478513848764" at="32,39,33,35" concept="7" />
+      <node id="3707571478513848764" at="41,56,42,47" concept="6" />
+      <node id="3707571478513848764" at="42,47,43,50" concept="6" />
+      <node id="3707571478513848764" at="43,50,44,84" concept="1" />
+      <node id="3707571478513848764" at="44,84,45,17" concept="0" />
+      <node id="3707571478513848764" at="49,55,50,26" concept="7" />
+      <node id="3707571478513849062" at="52,60,53,19" concept="7" />
+      <node id="3707571478513848764" at="49,0,52,0" concept="9" trace="getFileName_Track#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="3707571478513848764" at="52,0,55,0" concept="9" trace="getFileExtension_Track#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="3707571478513848764" at="40,58,46,7" concept="4" />
+      <scope id="3707571478513848764" at="32,39,33,35" />
+      <scope id="3707571478513848764" at="49,55,50,26" />
+      <scope id="3707571478513848764" at="52,60,53,19" />
+      <scope id="3707571478513848764" at="49,0,52,0">
         <var name="node" id="3707571478513848764" />
       </scope>
-      <scope id="3707571478513848764" at="46,0,49,0">
+      <scope id="3707571478513848764" at="52,0,55,0">
         <var name="node" id="3707571478513848764" />
       </scope>
-      <scope id="3707571478513848764" at="35,56,39,17">
+      <scope id="3707571478513848764" at="41,56,45,17">
         <var name="ext" id="3707571478513848764" />
         <var name="fname" id="3707571478513848764" />
       </scope>
     </file>
     <file name="Track_TextGen.java">
-      <node id="3707571478513848764" at="11,54,12,55" concept="4" />
-      <node id="3707571478513849363" at="12,55,13,24" concept="1" />
-      <node id="3707571478513848764" at="10,0,15,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
-      <scope id="3707571478513848764" at="11,54,13,24">
+      <node id="3707571478513848764" at="15,54,16,55" concept="6" />
+      <node id="3271165193364296759" at="17,96,18,27" concept="1" />
+      <node id="3707571478513848764" at="23,0,24,0" concept="8" trace="patterns$WshY" />
+      <node id="3271165193364296759" at="16,55,19,5" concept="3" />
+      <node id="3707571478513848764" at="14,0,21,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="3271165193364296759" at="17,96,18,27" />
+      <scope id="3271165193364296759" at="16,55,19,5">
+        <var name="item" id="3271165193364296759" />
+      </scope>
+      <scope id="3707571478513848764" at="15,54,19,5">
         <var name="tgs" id="3707571478513848764" />
       </scope>
-      <scope id="3707571478513848764" at="10,0,15,0">
+      <scope id="3707571478513848764" at="14,0,21,0">
         <var name="ctx" id="3707571478513848764" />
       </scope>
-      <unit id="3707571478513848764" at="9,0,16,0" name="BimBamBouML.textGen.Track_TextGen" />
+      <unit id="3707571478513848764" at="22,0,25,0" name="BimBamBouML.textGen.Track_TextGen$LINKS" />
+      <unit id="3707571478513848764" at="13,0,26,0" name="BimBamBouML.textGen.Track_TextGen" />
     </file>
   </root>
 </debug-info>

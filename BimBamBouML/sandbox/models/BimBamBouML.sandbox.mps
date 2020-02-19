@@ -25,35 +25,59 @@
   </registry>
   <node concept="3H6D46" id="1849qZZ7QqC">
     <property role="3H6D45" value="120" />
-    <node concept="3H6D41" id="1849qZZ7QqD" role="3H6D43">
-      <property role="3H6D40" value="5" />
-      <node concept="3H6D4s" id="1849qZZ7QqF" role="3H6D4u">
-        <node concept="3H6D4l" id="1849qZZ89Gm" role="3H6D4r">
+    <node concept="3H6D41" id="3dNW9QWcgSh" role="3H6D43">
+      <property role="3H6D40" value="1" />
+      <node concept="3H6D4s" id="3dNW9QWcgSj" role="3H6D4u">
+        <node concept="3H6D4l" id="3dNW9QWcgSl" role="3H6D4r">
           <property role="3H6D5N" value="1849qZZ7Fjl/BASS_DRUMS" />
         </node>
-        <node concept="3H6D4l" id="1849qZZ898s" role="3H6D4r">
+      </node>
+    </node>
+    <node concept="3H6D41" id="3dNW9QWcgSn" role="3H6D43">
+      <property role="3H6D40" value="5" />
+      <node concept="3H6D4s" id="3dNW9QWcgSs" role="3H6D4u">
+        <node concept="3H6D4l" id="3dNW9QWcgSz" role="3H6D4r">
+          <property role="3H6D5N" value="1849qZZ7Fjl/BASS_DRUMS" />
+        </node>
+      </node>
+      <node concept="3H6D4s" id="3dNW9QWcgSA" role="3H6D4u">
+        <node concept="3H6D4l" id="3dNW9QWcgSW" role="3H6D4r">
+          <property role="3H6D5N" value="1849qZZ7Fjo/KICKS" />
+        </node>
+        <node concept="3H6D4l" id="3dNW9QWcgSU" role="3H6D4r">
           <property role="3H6D5N" value="1849qZZ898N/CRASH_CYMBAL" />
         </node>
       </node>
-      <node concept="3H6D4s" id="1849qZZ89Gh" role="3H6D4u">
-        <node concept="3H6D4l" id="1849qZZ89GC" role="3H6D4r">
-          <property role="3H6D5N" value="1849qZZ7Fjo/KICKS" />
+    </node>
+  </node>
+  <node concept="3H6D46" id="2P_wQ_S6gjN">
+    <property role="3H6D45" value="120" />
+    <node concept="3H6D41" id="2P_wQ_S6hqw" role="3H6D43">
+      <property role="3H6D40" value="290" />
+      <node concept="3H6D4s" id="2P_wQ_S6hqy" role="3H6D4u">
+        <node concept="3H6D4l" id="2P_wQ_S6hqJ" role="3H6D4r">
+          <property role="3H6D5N" value="2P_wQ_S6pT1/HI_HAT" />
         </node>
-        <node concept="3H6D4l" id="1849qZZ89Gu" role="3H6D4r">
+        <node concept="3H6D4l" id="2P_wQ_S6hrZ" role="3H6D4r">
           <property role="3H6D5N" value="1849qZZ7Fjl/BASS_DRUMS" />
         </node>
       </node>
-      <node concept="3H6D4s" id="1849qZZ89Gx" role="3H6D4u">
-        <node concept="3H6D4l" id="1849qZZ8ahq" role="3H6D4r">
-          <property role="3H6D5N" value="1849qZZ89GR/SILENCE" />
+      <node concept="3H6D4s" id="2P_wQ_S6hqM" role="3H6D4u">
+        <node concept="3H6D4l" id="2P_wQ_S6hqX" role="3H6D4r">
+          <property role="3H6D5N" value="2P_wQ_S6pT1/HI_HAT" />
         </node>
       </node>
-      <node concept="3H6D4s" id="1849qZZ8ahs" role="3H6D4u">
-        <node concept="3H6D4l" id="1849qZZ8ahY" role="3H6D4r">
-          <property role="3H6D5N" value="1849qZZ7Fjo/KICKS" />
+      <node concept="3H6D4s" id="2P_wQ_S6hqQ" role="3H6D4u">
+        <node concept="3H6D4l" id="2P_wQ_S6hr0" role="3H6D4r">
+          <property role="3H6D5N" value="2P_wQ_S6pT1/HI_HAT" />
         </node>
-        <node concept="3H6D4l" id="1849qZZ8ahA" role="3H6D4r">
-          <property role="3H6D5N" value="1849qZZ7Fjl/BASS_DRUMS" />
+        <node concept="3H6D4l" id="2P_wQ_S6o$b" role="3H6D4r">
+          <property role="3H6D5N" value="2P_wQ_S6o$0/SNARE_DRUM" />
+        </node>
+      </node>
+      <node concept="3H6D4s" id="2P_wQ_S6hr2" role="3H6D4u">
+        <node concept="3H6D4l" id="2P_wQ_S6hra" role="3H6D4r">
+          <property role="3H6D5N" value="2P_wQ_S6pT1/HI_HAT" />
         </node>
       </node>
     </node>
