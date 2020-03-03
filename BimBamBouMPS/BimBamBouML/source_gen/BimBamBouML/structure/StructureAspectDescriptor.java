@@ -12,13 +12,18 @@ import jetbrains.mps.smodel.adapter.ids.SConceptId;
 import jetbrains.mps.smodel.runtime.DataTypeDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
-import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
+import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
+  /*package*/ final ConceptDescriptor myConceptChordNote = createDescriptorForChordNote();
+  /*package*/ final ConceptDescriptor myConceptCordConfig = createDescriptorForCordConfig();
+  /*package*/ final ConceptDescriptor myConceptMapping = createDescriptorForMapping();
   /*package*/ final ConceptDescriptor myConceptNote = createDescriptorForNote();
   /*package*/ final ConceptDescriptor myConceptPattern = createDescriptorForPattern();
+  /*package*/ final ConceptDescriptor myConceptSong = createDescriptorForSong();
   /*package*/ final ConceptDescriptor myConceptSound = createDescriptorForSound();
+  /*package*/ final ConceptDescriptor myConceptToneNote = createDescriptorForToneNote();
   /*package*/ final ConceptDescriptor myConceptTrack = createDescriptorForTrack();
   /*package*/ final EnumerationDescriptor myEnumerationDuration = new EnumerationDescriptor_Duration();
   /*package*/ final EnumerationDescriptor myEnumerationTone = new EnumerationDescriptor_Tone();
@@ -36,19 +41,29 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptNote, myConceptPattern, myConceptSound, myConceptTrack);
+    return Arrays.asList(myConceptChordNote, myConceptCordConfig, myConceptMapping, myConceptNote, myConceptPattern, myConceptSong, myConceptSound, myConceptToneNote, myConceptTrack);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
+      case LanguageConceptSwitch.ChordNote:
+        return myConceptChordNote;
+      case LanguageConceptSwitch.CordConfig:
+        return myConceptCordConfig;
+      case LanguageConceptSwitch.Mapping:
+        return myConceptMapping;
       case LanguageConceptSwitch.Note:
         return myConceptNote;
       case LanguageConceptSwitch.Pattern:
         return myConceptPattern;
+      case LanguageConceptSwitch.Song:
+        return myConceptSong;
       case LanguageConceptSwitch.Sound:
         return myConceptSound;
+      case LanguageConceptSwitch.ToneNote:
+        return myConceptToneNote;
       case LanguageConceptSwitch.Track:
         return myConceptTrack;
       default:
@@ -65,13 +80,38 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myIndexSwitch.index(c);
   }
 
-  private static ConceptDescriptor createDescriptorForNote() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BimBamBouML", "Note", 0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x120425afff1eb4baL);
+  private static ConceptDescriptor createDescriptorForChordNote() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BimBamBouML", "ChordNote", 0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x21168ba47fd8fd65L);
     b.class_(false, false, false);
-    b.origin("r:d77e8a00-b786-477d-87ac-e13b035d3730(BimBamBouML.structure)/1298204030419252410");
+    b.super_("BimBamBouML.structure.Note", 0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x21168ba47fd8fd6aL);
+    b.origin("r:d77e8a00-b786-477d-87ac-e13b035d3730(BimBamBouML.structure)/2384246591375080805");
     b.version(2);
-    b.property("duration", 0x120425afff1eb4bdL).type(MetaIdFactory.dataTypeId(0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x120425afff1eb4bfL)).origin("1298204030419252413").done();
-    b.property("tone", 0x120425afff1eb4dcL).type(MetaIdFactory.dataTypeId(0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x120425afff1eb4d3L)).origin("1298204030419252444").done();
+    b.associate("mapping", 0x21168ba47fd8fd66L).target(0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x21168ba47fd6bfbcL).optional(true).origin("2384246591375080806").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForCordConfig() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BimBamBouML", "CordConfig", 0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x21168ba47fd6bfb9L);
+    b.class_(false, false, true);
+    b.origin("r:d77e8a00-b786-477d-87ac-e13b035d3730(BimBamBouML.structure)/2384246591374933945");
+    b.version(2);
+    b.property("instrument", 0x2feb1b992cf9422cL).type(PrimitiveTypeId.STRING).origin("3452883884008096300").done();
+    b.aggregate("mappings", 0x21168ba47fd6bfbaL).target(0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x21168ba47fd6bfbcL).optional(true).ordered(true).multiple(true).origin("2384246591374933946").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForMapping() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BimBamBouML", "Mapping", 0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x21168ba47fd6bfbcL);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:d77e8a00-b786-477d-87ac-e13b035d3730(BimBamBouML.structure)/2384246591374933948");
+    b.version(2);
+    b.property("chord", 0x21168ba47fd6bfbfL).type(PrimitiveTypeId.STRING).origin("2384246591374933951").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForNote() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BimBamBouML", "Note", 0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x21168ba47fd8fd6aL);
+    b.class_(false, true, false);
+    b.origin("r:d77e8a00-b786-477d-87ac-e13b035d3730(BimBamBouML.structure)/2384246591375080810");
+    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPattern() {
@@ -83,17 +123,37 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("sounds", 0x120425afff1eb4b1L).target(0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x120425afff1eb4b3L).optional(true).ordered(true).multiple(true).origin("1298204030419252401").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForSong() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BimBamBouML", "Song", 0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x73c098f5eaa10f88L);
+    b.class_(false, false, true);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:d77e8a00-b786-477d-87ac-e13b035d3730(BimBamBouML.structure)/8340834691860991880");
+    b.version(2);
+    b.aggregate("tracks", 0x73c098f5eaa10f89L).target(0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x120425afff1eb4a9L).optional(false).ordered(true).multiple(true).origin("8340834691860991881").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForSound() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BimBamBouML", "Sound", 0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x120425afff1eb4b3L);
     b.class_(false, false, false);
     b.origin("r:d77e8a00-b786-477d-87ac-e13b035d3730(BimBamBouML.structure)/1298204030419252403");
     b.version(2);
-    b.aggregate("notes", 0x120425afff1eb4b4L).target(0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x120425afff1eb4baL).optional(true).ordered(true).multiple(true).origin("1298204030419252404").done();
+    b.aggregate("notes", 0x120425afff1eb4b4L).target(0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x21168ba47fd8fd6aL).optional(true).ordered(true).multiple(true).origin("1298204030419252404").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForToneNote() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BimBamBouML", "ToneNote", 0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x120425afff1eb4baL);
+    b.class_(false, false, false);
+    b.super_("BimBamBouML.structure.Note", 0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x21168ba47fd8fd6aL);
+    b.origin("r:d77e8a00-b786-477d-87ac-e13b035d3730(BimBamBouML.structure)/1298204030419252410");
+    b.version(2);
+    b.property("duration", 0x120425afff1eb4bdL).type(MetaIdFactory.dataTypeId(0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x120425afff1eb4bfL)).origin("1298204030419252413").done();
+    b.property("tone", 0x120425afff1eb4dcL).type(MetaIdFactory.dataTypeId(0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x120425afff1eb4d3L)).origin("1298204030419252444").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTrack() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BimBamBouML", "Track", 0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x120425afff1eb4a9L);
     b.class_(false, false, true);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:d77e8a00-b786-477d-87ac-e13b035d3730(BimBamBouML.structure)/1298204030419252393");
     b.version(2);
     b.property("tempo", 0x120425afff1eb4aaL).type(PrimitiveTypeId.INTEGER).origin("1298204030419252394").done();

@@ -9,9 +9,14 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_ChordNote;
+  private ConceptPresentation props_CordConfig;
+  private ConceptPresentation props_Mapping;
   private ConceptPresentation props_Note;
   private ConceptPresentation props_Pattern;
+  private ConceptPresentation props_Song;
   private ConceptPresentation props_Sound;
+  private ConceptPresentation props_ToneNote;
   private ConceptPresentation props_Track;
 
   @Override
@@ -19,10 +24,30 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.ChordNote:
+        if (props_ChordNote == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ChordNote");
+          props_ChordNote = cpb.create();
+        }
+        return props_ChordNote;
+      case LanguageConceptSwitch.CordConfig:
+        if (props_CordConfig == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("CordConfig");
+          props_CordConfig = cpb.create();
+        }
+        return props_CordConfig;
+      case LanguageConceptSwitch.Mapping:
+        if (props_Mapping == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Mapping = cpb.create();
+        }
+        return props_Mapping;
       case LanguageConceptSwitch.Note:
         if (props_Note == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Note");
           props_Note = cpb.create();
         }
         return props_Note;
@@ -33,6 +58,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Pattern = cpb.create();
         }
         return props_Pattern;
+      case LanguageConceptSwitch.Song:
+        if (props_Song == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Song = cpb.create();
+        }
+        return props_Song;
       case LanguageConceptSwitch.Sound:
         if (props_Sound == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -40,10 +72,17 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Sound = cpb.create();
         }
         return props_Sound;
+      case LanguageConceptSwitch.ToneNote:
+        if (props_ToneNote == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ToneNote");
+          props_ToneNote = cpb.create();
+        }
+        return props_ToneNote;
       case LanguageConceptSwitch.Track:
         if (props_Track == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Track");
+          cpb.presentationByName();
           props_Track = cpb.create();
         }
         return props_Track;

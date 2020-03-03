@@ -22,12 +22,17 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
+      </concept>
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
         <property id="241647608299431129" name="propertyId" index="IQ2nx" />
@@ -64,6 +69,9 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="1849qZZ7FiI" resolve="Pattern" />
     </node>
+    <node concept="PrWs8" id="71pvk53LPAD" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1849qZZ7FiI">
     <property role="TrG5h" value="Pattern" />
@@ -89,12 +97,13 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="notes" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="1849qZZ7FiU" resolve="Note" />
+      <ref role="20lvS9" node="24myUhZQfPE" resolve="Note" />
     </node>
   </node>
   <node concept="1TIwiD" id="1849qZZ7FiU">
-    <property role="TrG5h" value="Note" />
+    <property role="TrG5h" value="ToneNote" />
     <property role="EcuMT" value="1298204030419252410" />
+    <ref role="1TJDcQ" node="24myUhZQfPE" resolve="Note" />
     <node concept="1TJgyi" id="1849qZZ7FiX" role="1TKVEl">
       <property role="IQ2nx" value="1298204030419252413" />
       <property role="TrG5h" value="duration" />
@@ -176,6 +185,67 @@
       <property role="3tVfz5" value="1298204030419376951" />
       <property role="TrG5h" value="SILENCE" />
       <property role="1L1pqM" value="$" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="24myUhZPFYT">
+    <property role="EcuMT" value="2384246591374933945" />
+    <property role="TrG5h" value="CordConfig" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="24myUhZPFYU" role="1TKVEi">
+      <property role="IQ2ns" value="2384246591374933946" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="mappings" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="24myUhZPFYW" resolve="Mapping" />
+    </node>
+    <node concept="1TJgyi" id="2ZF6T$GYk8G" role="1TKVEl">
+      <property role="IQ2nx" value="3452883884008096300" />
+      <property role="TrG5h" value="instrument" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="24myUhZPFYW">
+    <property role="TrG5h" value="Mapping" />
+    <property role="EcuMT" value="2384246591374933948" />
+    <node concept="1TJgyi" id="24myUhZPFYZ" role="1TKVEl">
+      <property role="IQ2nx" value="2384246591374933951" />
+      <property role="TrG5h" value="chord" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="7f0AfnECoHE" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="24myUhZQfP_">
+    <property role="EcuMT" value="2384246591375080805" />
+    <property role="TrG5h" value="ChordNote" />
+    <ref role="1TJDcQ" node="24myUhZQfPE" resolve="Note" />
+    <node concept="1TJgyj" id="24myUhZQfPA" role="1TKVEi">
+      <property role="IQ2ns" value="2384246591375080806" />
+      <property role="20kJfa" value="mapping" />
+      <ref role="20lvS9" node="24myUhZPFYW" resolve="Mapping" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="24myUhZQfPE">
+    <property role="EcuMT" value="2384246591375080810" />
+    <property role="TrG5h" value="Note" />
+    <property role="R5$K7" value="true" />
+  </node>
+  <node concept="1TIwiD" id="7f0AfnECgY8">
+    <property role="EcuMT" value="8340834691860991880" />
+    <property role="TrG5h" value="Song" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7f0AfnECgY9" role="1TKVEi">
+      <property role="IQ2ns" value="8340834691860991881" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="tracks" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="1849qZZ7FiD" resolve="Track" />
+    </node>
+    <node concept="PrWs8" id="7f0AfnEChA5" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>

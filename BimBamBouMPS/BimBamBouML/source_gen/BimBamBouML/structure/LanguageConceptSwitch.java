@@ -9,16 +9,26 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int Note = 0;
-  public static final int Pattern = 1;
-  public static final int Sound = 2;
-  public static final int Track = 3;
+  public static final int ChordNote = 0;
+  public static final int CordConfig = 1;
+  public static final int Mapping = 2;
+  public static final int Note = 3;
+  public static final int Pattern = 4;
+  public static final int Song = 5;
+  public static final int Sound = 6;
+  public static final int ToneNote = 7;
+  public static final int Track = 8;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x9cde07181d5f461dL, 0xaed55578dacf102eL);
-    builder.put(0x120425afff1eb4baL, Note);
+    builder.put(0x21168ba47fd8fd65L, ChordNote);
+    builder.put(0x21168ba47fd6bfb9L, CordConfig);
+    builder.put(0x21168ba47fd6bfbcL, Mapping);
+    builder.put(0x21168ba47fd8fd6aL, Note);
     builder.put(0x120425afff1eb4aeL, Pattern);
+    builder.put(0x73c098f5eaa10f88L, Song);
     builder.put(0x120425afff1eb4b3L, Sound);
+    builder.put(0x120425afff1eb4baL, ToneNote);
     builder.put(0x120425afff1eb4a9L, Track);
     myIndex = builder.seal();
   }
