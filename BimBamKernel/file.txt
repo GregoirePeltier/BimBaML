@@ -1,0 +1,64 @@
+Track: Drums
+118
+^ O
+^
+^ S
+^
+^ O
+^
+^ S
+^
+^ O
+^
+^ S
+^
+^ O
+^
+^ S
+^
+^ O
+^
+^ S
+^
+Track: FRETLESS_BASS
+118
+D4q A4q
+A4q
+D2q
+D4q
+D2q
+A4q
+A2q
+A4q
+D4q A4q
+A4q
+D2q
+D4q
+D2q
+A4q
+A2q
+A4q
+D4q A4q
+A4q
+D2q
+D4q
+D2q
+A4q
+A2q
+A4q
+D4q A4q
+A4q
+D2q
+D4q
+D2q
+A4q
+A2q
+A4q
+D4q A4q
+A4q
+D2q
+D4q
+D2q
+A4q
+A2q
+A4q

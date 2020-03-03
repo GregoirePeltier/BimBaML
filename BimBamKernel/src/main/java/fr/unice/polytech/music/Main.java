@@ -1,18 +1,27 @@
 package fr.unice.polytech.music;
 
 import org.jfugue.midi.MidiFileManager;
-import org.jfugue.pattern.Pattern;
 import org.jfugue.player.Player;
 import org.jfugue.rhythm.Rhythm;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.HashMap;
 
 import java.util.Map;
 
 public class Main {
+
+    public static void main(String[] args) throws IOException {
+        TrackFileReader trackFileReader = new TrackFileReader("file.txt");
+        trackFileReader.readAndSave();
+    }
+
+    public static void main1(String[] args) {
+        new Player().play("T118 V0 I[FRETLESS_BASS] F5i C5i E5bi F5i E5bi C5i B4bi C5i F5i C5i E5bi F5i E5bi C5i B4bi C5i");
+    }
 
     private static Map<String, String> layers = new HashMap<String, String>();
 
@@ -50,7 +59,7 @@ public class Main {
         //System.out.println(layers);
     }
 
-    public static void main(String[] args) {
+    public static void main2(String[] args) {
         try {
 
             //Pattern pattern = new Pattern("50a10 60a10 70a10");
@@ -100,6 +109,8 @@ public class Main {
             //new Player().play(rhythm.getPattern().repeat(2));
             //new Player().play(new Pattern( "Rc | Rc | Rc | Rc | Rc | Rc").setVoice(0));
 
+
+            new Player().play("T118 V0 I[FRETLESS_BASS] F4i C4i E4bi F4i E4bi C4i B3bi C4i F4i C4i E4bi F4i E4bi C4i B3bi C4i");
 
             //Pattern p1 = new Pattern("Eq Ch. | Eq Ch. | Dq Eq Dq Cq").setVoice(0).setInstrument("Piano");
             //Pattern p2 = new Pattern("Rw     | Rw     | GmajQQQ  CmajQ").setVoice(1).setInstrument("Flute");
