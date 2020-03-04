@@ -20,7 +20,7 @@ public class Main {
     }
 
     public static void main1(String[] args) {
-        new Player().play("T118 V0 I[FRETLESS_BASS] F5i C5i E5bi F5i E5bi C5i B4bi C5i F5i C5i E5bi F5i E5bi C5i B4bi C5i");
+        new Player().play("T118 V0 I[FRETLESS_BASS] F3i C3i E3bi F3i E3bi C3i B2bi C3i F3i C3i E3bi F3i E3bi C3i B2bi C3i");
     }
 
     private static Map<String, String> layers = new HashMap<String, String>();

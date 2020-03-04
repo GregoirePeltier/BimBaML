@@ -44,10 +44,10 @@ public class DrumAnalyser {
 
     private void addHits(String[] hits){
         for (String s : hits) {
-            layers.put(s, layers.get(s) + s);
+            layers.put(s, layers.get(s) + s + ".");
         }
         int max = layers.values().stream().map(String::length).max(Integer::compareTo).orElse(0);
-        layers.keySet().stream().filter((k -> layers.get(k).length() < max)).forEach(k -> layers.put(k, layers.get(k) + "."));
+        layers.keySet().stream().filter((k -> layers.get(k).length() < max)).forEach(k -> layers.put(k, layers.get(k) + ".."));
     }
 
     public String readTrack() throws IOException {

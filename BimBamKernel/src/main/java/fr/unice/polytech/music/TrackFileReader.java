@@ -18,7 +18,7 @@ public class TrackFileReader {
     private String fileName;
     private List<Pattern> patterns = new ArrayList<>();
 
-    TrackFileReader(String fileName){
+    public TrackFileReader(String fileName){
         this.fileName = fileName;
     }
 
@@ -27,7 +27,8 @@ public class TrackFileReader {
         String line = reader.readLine();
         while(line != null) {
             if(line.contains("Track:")) {
-                if(line.contains("Drums")){
+                line = reader.readLine();
+                if(line.equals("Drum")){
                     DrumAnalyser drumAnalyser = new DrumAnalyser(reader);
                     line = drumAnalyser.readTrack();
                     patterns.add(drumAnalyser.generatePattern());
