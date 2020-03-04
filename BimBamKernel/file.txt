@@ -1,49 +1,69 @@
 Track: bass
-Fretless_Bass
+voice
 118
-D4q A4q
-A4q
-D2q
-D4q
-D2q
-A4q
-A2q
-A4q
-D4q A4q
-A4q
-D2q
-D4q
-D2q
-A4q
-A2q
-A4q
-D4q A4q
-A4q
-D2q
-D4q
-D2q
-A4q
-A2q
-A4q
-D4q A4q
-A4q
-D2q
-D4q
-D2q
-A4q
-A2q
-A4q
-D4q A4q
-A4q
-D2q
-D4q
-D2q
-A4q
-A2q
-A4q
+F3i#
+C3i#
+E3i
+F3i#
+E3i
+C3i#
+B2i
+C3i#
+F3i#
+C3i#
+E3i
+F3i#
+E3i
+C3i#
+B2i
+C3i#
+F3i#
+C3i#
+E3i
+F3i#
+E3i
+C3i#
+B2i
+C3i#
+F3i#
+C3i#
+E3i
+F3i#
+E3i
+C3i#
+B2i
+C3i#
+F3i#
+C3i#
+E3i
+F3i#
+E3i
+C3i#
+B2i
+C3i#
 Track: Drums
 Drum
 118
+^ O
+^
+^ S
+^
+^ O
+^
+^ S
+^
+^ O
+^
+^ S
+^
+^ O
+^
+^ S
+^
+^ O
+^
+^ S
+^
 ^ O
 ^
 ^ S
