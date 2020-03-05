@@ -1,5 +1,5 @@
 Track: bass
-voice
+fretless_bass
 118
 F3i#
 C3i#

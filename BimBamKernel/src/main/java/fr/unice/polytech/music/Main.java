@@ -15,7 +15,7 @@ import java.util.Map;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        TrackFileReader trackFileReader = new TrackFileReader("file.txt");
+        TrackFileReader trackFileReader = new TrackFileReader(args[0]);
         trackFileReader.readAndSave();
     }
 
