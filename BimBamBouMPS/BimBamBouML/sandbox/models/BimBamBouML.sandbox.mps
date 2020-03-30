@@ -406,5 +406,42 @@
       </node>
     </node>
   </node>
+  <node concept="2poptX" id="2toLu9DAlBP">
+    <property role="TrG5h" value="JohnnyBeGood" />
+    <node concept="3H6D46" id="2toLu9DAlBQ" role="2poptW">
+      <property role="3H6D45" value="170" />
+      <property role="F$s8Q" value="Drum" />
+      <property role="TrG5h" value="Drum" />
+      <node concept="3H6D41" id="3dNW9QWcgSh" role="3H6D43">
+        <property role="3H6D40" value="290" />
+        <node concept="3H6D4s" id="3dNW9QWcgSj" role="3H6D4u">
+          <node concept="3H6D4l" id="3dNW9QWcgSl" role="3H6D4r">
+            <property role="3H6D5N" value="2P_wQ_S6pST/RIDE_CYMBAL" />
+          </node>
+          <node concept="3H6D4l" id="2toLu9D_EFd" role="3H6D4r">
+            <property role="3H6D5N" value="1849qZZ7Fjl/BASS_DRUMS" />
+          </node>
+        </node>
+        <node concept="3H6D4s" id="2toLu9D_EEy" role="3H6D4u">
+          <node concept="3H6D4l" id="2toLu9DAXXQ" role="3H6D4r">
+            <property role="3H6D5N" value="2P_wQ_S6pST/RIDE_CYMBAL" />
+          </node>
+        </node>
+        <node concept="3H6D4s" id="2toLu9D_EEK" role="3H6D4u">
+          <node concept="3H6D4l" id="2toLu9DAKxg" role="3H6D4r">
+            <property role="3H6D5N" value="2P_wQ_S6pST/RIDE_CYMBAL" />
+          </node>
+          <node concept="3H6D4l" id="2toLu9D_EFk" role="3H6D4r">
+            <property role="3H6D5N" value="1849qZZ7Fjo/KICKS" />
+          </node>
+        </node>
+        <node concept="3H6D4s" id="2toLu9D_EEU" role="3H6D4u">
+          <node concept="3H6D4l" id="2toLu9D_EF2" role="3H6D4r">
+            <property role="3H6D5N" value="2P_wQ_S6pST/RIDE_CYMBAL" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
