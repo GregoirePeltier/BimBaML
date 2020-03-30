@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-71s45eo5ho6g3zk8tcinhxsfiimt9gl">
-  <files names="ChordNote_Editor.java:ChordNote_EditorBuilder_a.java:CordConfig_Editor.java:CordConfig_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:Mapping_Editor.java:Mapping_EditorBuilder_a.java:Pattern_Editor.java:Pattern_EditorBuilder_a.java:Song_Editor.java:Song_EditorBuilder_a.java:Sound_Editor.java:Sound_EditorBuilder_a.java:ToneNote_Editor.java:ToneNote_EditorBuilder_a.java:Track_Editor.java:Track_EditorBuilder_a.java" />
+<product version="3" modelHash="a7q0u9m9yuy2gspw6lm9w828f6riflm">
+  <files names="ChordNote_Editor.java:ChordNote_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:Mapping_Editor.java:Mapping_EditorBuilder_a.java:NoteConfig_Editor.java:NoteConfig_EditorBuilder_a.java:Pattern_Editor.java:Pattern_EditorBuilder_a.java:Song_Editor.java:Song_EditorBuilder_a.java:Sound_Editor.java:Sound_EditorBuilder_a.java:ToneNote_Editor.java:ToneNote_EditorBuilder_a.java:Track_Editor.java:Track_EditorBuilder_a.java" />
 </product>
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-94asx2c0hfe77t8s8xhbdx48hx60at6">
+<product version="3" modelHash="a4igevqrqlgkk0q2ng6k4gjf4za64pt">
   <files names="ChordNote_TextGen.java:Pattern_TextGen.java:Song_TextGen.java:Sound_TextGen.java:TextGenAspectDescriptor.java:ToneNote_TextGen.java:Track_TextGen.java" />
 </product>
 
