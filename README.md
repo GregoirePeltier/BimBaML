@@ -16,7 +16,7 @@ Executer depuis le projet racine :
 # Editer et ecouter des exemple 
 
 Ouvrire le projet MPS, et se rendre dans la sandbow BimBamBouML.sandbox
-Dans la chanson de votre choix, faire Build > Build Project
+Dans la chanson de votre choix, faire Build > Make Project
 Puis depuis le terminal de MPS faire ./play.sh NomDeLaChanson
 ( ou depuis un terminal placé dans le dossier ./BimBamBouMPS )
 
