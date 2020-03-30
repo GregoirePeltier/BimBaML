@@ -3,7 +3,6 @@ package fr.unice.polytech.music.analyser;
 import org.jfugue.pattern.Pattern;
 import org.jfugue.rhythm.Rhythm;
 
-import javax.xml.bind.SchemaOutputResolver;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.HashMap;
