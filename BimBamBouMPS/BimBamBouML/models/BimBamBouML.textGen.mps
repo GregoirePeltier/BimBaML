@@ -100,18 +100,8 @@
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
-        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
-      </concept>
-      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
-        <child id="1144104376918" name="parameter" index="1xVPHs" />
-      </concept>
       <concept id="1966870290088668512" name="jetbrains.mps.lang.smodel.structure.Enum_MemberLiteral" flags="ng" index="2ViDtV">
         <reference id="1966870290088668516" name="memberDeclaration" index="2ViDtZ" />
-      </concept>
-      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
-      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
-        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -127,15 +117,8 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="779128492853369165" name="jetbrains.mps.lang.core.structure.SideTransformInfo" flags="ng" index="1KehLL">
-        <property id="779128492853934523" name="cellId" index="1K8rM7" />
-        <property id="779128492853699361" name="side" index="1Kfyot" />
       </concept>
     </language>
   </registry>
@@ -165,10 +148,17 @@
             </node>
           </node>
           <node concept="l8MVK" id="2ZF6T$GYheu" role="lcghm" />
-          <node concept="1KehLL" id="2ZF6T$GYgrY" role="lGtFl">
-            <property role="1K8rM7" value="Constant_yuehr3_c0" />
-            <property role="1Kfyot" value="Fg1jLUVyTf/left" />
+        </node>
+        <node concept="lc7rE" id="4Ylym9$1fdV" role="3cqZAp">
+          <node concept="l9hG8" id="4Ylym9$1fQh" role="lcghm">
+            <node concept="2OqwBi" id="4Ylym9$1fZf" role="lb14g">
+              <node concept="117lpO" id="4Ylym9$1fS1" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4Ylym9$1g7X" role="2OqNvi">
+                <ref role="3TsBF5" to="o5ti:4Ylym9$14Hk" resolve="instrument" />
+              </node>
+            </node>
           </node>
+          <node concept="l8MVK" id="4Ylym9$1gag" role="lcghm" />
         </node>
         <node concept="lc7rE" id="71pvk53M72u" role="3cqZAp">
           <node concept="l9hG8" id="71pvk53M732" role="lcghm">
@@ -477,34 +467,6 @@
                 <ref role="3TsBF5" to="o5ti:24myUhZPFYZ" resolve="chord" />
               </node>
             </node>
-          </node>
-          <node concept="la8eA" id="2ZF6T$GYl9p" role="lcghm">
-            <property role="lacIc" value="[" />
-          </node>
-          <node concept="l9hG8" id="2ZF6T$GYker" role="lcghm">
-            <node concept="2OqwBi" id="2ZF6T$GYr8M" role="lb14g">
-              <node concept="2OqwBi" id="2ZF6T$GYkE1" role="2Oq$k0">
-                <node concept="2OqwBi" id="2ZF6T$GYkod" role="2Oq$k0">
-                  <node concept="117lpO" id="2ZF6T$GYkfO" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="2ZF6T$GYkxe" role="2OqNvi">
-                    <ref role="3Tt5mk" to="o5ti:24myUhZQfPA" resolve="mapping" />
-                  </node>
-                </node>
-                <node concept="2Xjw5R" id="2ZF6T$GYqXv" role="2OqNvi">
-                  <node concept="1xMEDy" id="2ZF6T$GYqXx" role="1xVPHs">
-                    <node concept="chp4Y" id="2ZF6T$GYr02" role="ri$Ld">
-                      <ref role="cht4Q" to="o5ti:24myUhZPFYT" resolve="CordConfig" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3TrcHB" id="2ZF6T$GYrhh" role="2OqNvi">
-                <ref role="3TsBF5" to="o5ti:2ZF6T$GYk8G" resolve="instrument" />
-              </node>
-            </node>
-          </node>
-          <node concept="la8eA" id="2ZF6T$GYlcZ" role="lcghm">
-            <property role="lacIc" value="]" />
           </node>
         </node>
         <node concept="lc7rE" id="2ZF6T$GYaou" role="3cqZAp">

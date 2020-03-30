@@ -58,7 +58,7 @@
             <node concept="nLn13" id="2ZF6T$GYoFw" role="2Oq$k0" />
             <node concept="1mIQ4w" id="2ZF6T$GYplT" role="2OqNvi">
               <node concept="chp4Y" id="2ZF6T$GYpn6" role="cj9EA">
-                <ref role="cht4Q" to="o5ti:24myUhZPFYT" resolve="CordConfig" />
+                <ref role="cht4Q" to="o5ti:24myUhZPFYT" resolve="NoteConfig" />
               </node>
             </node>
           </node>

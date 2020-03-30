@@ -885,7 +885,7 @@
             </node>
             <node concept="1mIQ4w" id="4o" role="2OqNvi">
               <node concept="chp4Y" id="4s" role="cj9EA">
-                <ref role="cht4Q" to="o5ti:24myUhZPFYT" resolve="CordConfig" />
+                <ref role="cht4Q" to="o5ti:24myUhZPFYT" resolve="NoteConfig" />
                 <node concept="cd27G" id="4u" role="lGtFl">
                   <node concept="3u3nmq" id="4v" role="cd27D">
                     <property role="3u3nmv" value="3452883884008117702" />

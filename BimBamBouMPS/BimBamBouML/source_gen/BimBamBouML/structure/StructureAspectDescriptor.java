@@ -17,9 +17,9 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptChordNote = createDescriptorForChordNote();
-  /*package*/ final ConceptDescriptor myConceptCordConfig = createDescriptorForCordConfig();
   /*package*/ final ConceptDescriptor myConceptMapping = createDescriptorForMapping();
   /*package*/ final ConceptDescriptor myConceptNote = createDescriptorForNote();
+  /*package*/ final ConceptDescriptor myConceptNoteConfig = createDescriptorForNoteConfig();
   /*package*/ final ConceptDescriptor myConceptPattern = createDescriptorForPattern();
   /*package*/ final ConceptDescriptor myConceptSong = createDescriptorForSong();
   /*package*/ final ConceptDescriptor myConceptSound = createDescriptorForSound();
@@ -41,7 +41,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptChordNote, myConceptCordConfig, myConceptMapping, myConceptNote, myConceptPattern, myConceptSong, myConceptSound, myConceptToneNote, myConceptTrack);
+    return Arrays.asList(myConceptChordNote, myConceptMapping, myConceptNote, myConceptNoteConfig, myConceptPattern, myConceptSong, myConceptSound, myConceptToneNote, myConceptTrack);
   }
 
   @Override
@@ -50,12 +50,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (myIndexSwitch.index(id)) {
       case LanguageConceptSwitch.ChordNote:
         return myConceptChordNote;
-      case LanguageConceptSwitch.CordConfig:
-        return myConceptCordConfig;
       case LanguageConceptSwitch.Mapping:
         return myConceptMapping;
       case LanguageConceptSwitch.Note:
         return myConceptNote;
+      case LanguageConceptSwitch.NoteConfig:
+        return myConceptNoteConfig;
       case LanguageConceptSwitch.Pattern:
         return myConceptPattern;
       case LanguageConceptSwitch.Song:
@@ -89,15 +89,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.associate("mapping", 0x21168ba47fd8fd66L).target(0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x21168ba47fd6bfbcL).optional(true).origin("2384246591375080806").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForCordConfig() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BimBamBouML", "CordConfig", 0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x21168ba47fd6bfb9L);
-    b.class_(false, false, true);
-    b.origin("r:d77e8a00-b786-477d-87ac-e13b035d3730(BimBamBouML.structure)/2384246591374933945");
-    b.version(2);
-    b.property("instrument", 0x2feb1b992cf9422cL).type(PrimitiveTypeId.STRING).origin("3452883884008096300").done();
-    b.aggregate("mappings", 0x21168ba47fd6bfbaL).target(0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x21168ba47fd6bfbcL).optional(true).ordered(true).multiple(true).origin("2384246591374933946").done();
-    return b.create();
-  }
   private static ConceptDescriptor createDescriptorForMapping() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BimBamBouML", "Mapping", 0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x21168ba47fd6bfbcL);
     b.class_(false, false, false);
@@ -112,6 +103,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, true, false);
     b.origin("r:d77e8a00-b786-477d-87ac-e13b035d3730(BimBamBouML.structure)/2384246591375080810");
     b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForNoteConfig() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BimBamBouML", "NoteConfig", 0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x21168ba47fd6bfb9L);
+    b.class_(false, false, true);
+    b.origin("r:d77e8a00-b786-477d-87ac-e13b035d3730(BimBamBouML.structure)/2384246591374933945");
+    b.version(2);
+    b.aggregate("mappings", 0x21168ba47fd6bfbaL).target(0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x21168ba47fd6bfbcL).optional(true).ordered(true).multiple(true).origin("2384246591374933946").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPattern() {
@@ -157,6 +156,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:d77e8a00-b786-477d-87ac-e13b035d3730(BimBamBouML.structure)/1298204030419252393");
     b.version(2);
     b.property("tempo", 0x120425afff1eb4aaL).type(PrimitiveTypeId.INTEGER).origin("1298204030419252394").done();
+    b.property("instrument", 0x4f95896264044b54L).type(PrimitiveTypeId.STRING).origin("5734640756203998036").done();
     b.aggregate("patterns", 0x120425afff1eb4acL).target(0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x120425afff1eb4aeL).optional(true).ordered(true).multiple(true).origin("1298204030419252396").done();
     return b.create();
   }

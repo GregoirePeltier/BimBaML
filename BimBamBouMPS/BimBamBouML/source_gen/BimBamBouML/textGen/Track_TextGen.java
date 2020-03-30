@@ -19,6 +19,8 @@ public class Track_TextGen extends TextGenDescriptorBase {
     tgs.append("Track: ");
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.name$tAp1));
     tgs.newLine();
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.instrument$Ca3X));
+    tgs.newLine();
     tgs.append(String.valueOf(SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.tempo$Wsh0)));
     tgs.newLine();
     for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.patterns$WshY)) {
@@ -28,6 +30,7 @@ public class Track_TextGen extends TextGenDescriptorBase {
 
   private static final class PROPS {
     /*package*/ static final SProperty name$tAp1 = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty instrument$Ca3X = MetaAdapterFactory.getProperty(0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x120425afff1eb4a9L, 0x4f95896264044b54L, "instrument");
     /*package*/ static final SProperty tempo$Wsh0 = MetaAdapterFactory.getProperty(0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x120425afff1eb4a9L, 0x120425afff1eb4aaL, "tempo");
   }
 

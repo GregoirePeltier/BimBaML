@@ -62,6 +62,11 @@
       <property role="TrG5h" value="tempo" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="4Ylym9$14Hk" role="1TKVEl">
+      <property role="IQ2nx" value="5734640756203998036" />
+      <property role="TrG5h" value="instrument" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="1849qZZ7FiG" role="1TKVEi">
       <property role="IQ2ns" value="1298204030419252396" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -189,7 +194,7 @@
   </node>
   <node concept="1TIwiD" id="24myUhZPFYT">
     <property role="EcuMT" value="2384246591374933945" />
-    <property role="TrG5h" value="CordConfig" />
+    <property role="TrG5h" value="NoteConfig" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="24myUhZPFYU" role="1TKVEi">
@@ -198,11 +203,6 @@
       <property role="20kJfa" value="mappings" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="24myUhZPFYW" resolve="Mapping" />
-    </node>
-    <node concept="1TJgyi" id="2ZF6T$GYk8G" role="1TKVEl">
-      <property role="IQ2nx" value="3452883884008096300" />
-      <property role="TrG5h" value="instrument" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="24myUhZPFYW">

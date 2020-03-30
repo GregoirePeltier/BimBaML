@@ -10,9 +10,9 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_ChordNote;
-  private ConceptPresentation props_CordConfig;
   private ConceptPresentation props_Mapping;
   private ConceptPresentation props_Note;
+  private ConceptPresentation props_NoteConfig;
   private ConceptPresentation props_Pattern;
   private ConceptPresentation props_Song;
   private ConceptPresentation props_Sound;
@@ -31,13 +31,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ChordNote = cpb.create();
         }
         return props_ChordNote;
-      case LanguageConceptSwitch.CordConfig:
-        if (props_CordConfig == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("CordConfig");
-          props_CordConfig = cpb.create();
-        }
-        return props_CordConfig;
       case LanguageConceptSwitch.Mapping:
         if (props_Mapping == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -51,6 +44,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Note = cpb.create();
         }
         return props_Note;
+      case LanguageConceptSwitch.NoteConfig:
+        if (props_NoteConfig == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("NoteConfig");
+          props_NoteConfig = cpb.create();
+        }
+        return props_NoteConfig;
       case LanguageConceptSwitch.Pattern:
         if (props_Pattern == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

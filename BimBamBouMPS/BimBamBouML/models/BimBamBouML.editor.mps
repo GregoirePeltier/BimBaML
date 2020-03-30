@@ -59,6 +59,12 @@
       <node concept="3F0ifn" id="71pvk53LPBy" role="3EZMnx">
         <property role="3F0ifm" value="  " />
       </node>
+      <node concept="3F0A7n" id="4Ylym9$1bFc" role="3EZMnx">
+        <ref role="1NtTu8" to="o5ti:4Ylym9$14Hk" resolve="instrument" />
+      </node>
+      <node concept="3F0ifn" id="4Ylym9$1bFw" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
       <node concept="3F0A7n" id="1849qZZ7QVf" role="3EZMnx">
         <ref role="1NtTu8" to="o5ti:1849qZZ7FiE" resolve="tempo" />
       </node>
@@ -126,11 +132,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="24myUhZQ3iC">
-    <ref role="1XX52x" to="o5ti:24myUhZPFYT" resolve="CordConfig" />
+    <ref role="1XX52x" to="o5ti:24myUhZPFYT" resolve="NoteConfig" />
     <node concept="3EZMnI" id="2ZF6T$GYk8u" role="2wV5jI">
-      <node concept="3F0A7n" id="2ZF6T$GYk8I" role="3EZMnx">
-        <ref role="1NtTu8" to="o5ti:2ZF6T$GYk8G" resolve="instrument" />
-      </node>
       <node concept="3F2HdR" id="24myUhZQbOR" role="3EZMnx">
         <ref role="1NtTu8" to="o5ti:24myUhZPFYU" resolve="mappings" />
         <node concept="2iRkQZ" id="24myUhZQbOT" role="2czzBx" />

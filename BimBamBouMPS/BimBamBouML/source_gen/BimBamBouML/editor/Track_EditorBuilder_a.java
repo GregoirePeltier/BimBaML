@@ -66,6 +66,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.addEditorCell(createConstant_1());
     editorCell.addEditorCell(createProperty_1());
     editorCell.addEditorCell(createConstant_2());
+    editorCell.addEditorCell(createProperty_2());
+    editorCell.addEditorCell(createConstant_3());
     editorCell.addEditorCell(createRefNodeList_0());
     return editorCell;
   }
@@ -109,6 +111,37 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createProperty_1() {
     getCellFactory().pushCellContext();
     try {
+      final SProperty property = PROPS.instrument$Ca3X;
+      getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
+      EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
+      editorCell.setDefaultText("<no instrument>");
+      editorCell.setCellId("property_instrument");
+      editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
+      setCellContext(editorCell);
+      Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(AttributeOperations.getAttributeList(myNode, new IAttributeDescriptor.AllAttributes()), CONCEPTS.PropertyAttribute$jT);
+      Iterable<SNode> currentPropertyAttributes = Sequence.fromIterable(propertyAttributes).where(new IWhereFilter<SNode>() {
+        public boolean accept(SNode it) {
+          return Objects.equals(PropertyAttribute__BehaviorDescriptor.getProperty_id1avfQ4BBzOo.invoke(it), property);
+        }
+      });
+      if (Sequence.fromIterable(currentPropertyAttributes).isNotEmpty()) {
+        EditorManager manager = EditorManager.getInstanceFromContext(getEditorContext());
+        return manager.createNodeRoleAttributeCell(Sequence.fromIterable(currentPropertyAttributes).first(), AttributeKind.PROPERTY, editorCell);
+      } else
+      return editorCell;
+    } finally {
+      getCellFactory().popCellContext();
+    }
+  }
+  private EditorCell createConstant_2() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ":");
+    editorCell.setCellId("Constant_97q2ds_e0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_2() {
+    getCellFactory().pushCellContext();
+    try {
       final SProperty property = PROPS.tempo$Wsh0;
       getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
       EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
@@ -131,24 +164,24 @@ import org.jetbrains.mps.openapi.language.SConcept;
       getCellFactory().popCellContext();
     }
   }
-  private EditorCell createConstant_2() {
+  private EditorCell createConstant_3() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, " ");
-    editorCell.setCellId("Constant_97q2ds_e0");
+    editorCell.setCellId("Constant_97q2ds_g0");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new patternsListHandler_97q2ds_f0(myNode, getEditorContext());
+    AbstractCellListHandler handler = new patternsListHandler_97q2ds_h0(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Horizontal(), false);
     editorCell.setCellId("refNodeList_patterns");
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class patternsListHandler_97q2ds_f0 extends RefNodeListHandler {
+  private static class patternsListHandler_97q2ds_h0 extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public patternsListHandler_97q2ds_f0(SNode ownerNode, EditorContext context) {
+    public patternsListHandler_97q2ds_h0(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -171,7 +204,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(patternsListHandler_97q2ds_f0.this.getNode(), LINKS.patterns$WshY));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(patternsListHandler_97q2ds_h0.this.getNode(), LINKS.patterns$WshY));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -198,6 +231,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
   private static final class PROPS {
     /*package*/ static final SProperty name$tAp1 = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty instrument$Ca3X = MetaAdapterFactory.getProperty(0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x120425afff1eb4a9L, 0x4f95896264044b54L, "instrument");
     /*package*/ static final SProperty tempo$Wsh0 = MetaAdapterFactory.getProperty(0x9cde07181d5f461dL, 0xaed55578dacf102eL, 0x120425afff1eb4a9L, 0x120425afff1eb4aaL, "tempo");
   }
 
