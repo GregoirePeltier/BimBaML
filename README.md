@@ -11,7 +11,7 @@ Executer depuis le projet racine :
 - ` mvn clean install`
 - ` cd ../BimBamBouMPS`
 - ` ./play.sh BillieJean`
-- ` ./play.sh JonnieBeGood`
+- ` ./play.sh JohnnyBeGood`
 
 # Editer et ecouter des exemple 
 
